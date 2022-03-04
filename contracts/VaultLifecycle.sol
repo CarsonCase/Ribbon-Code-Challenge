@@ -713,6 +713,7 @@ library VaultLifecycle {
 
         if (balance > 0) {
             /// todo add whatever bs I come up with for swapping here
+            address toSendBack = address(_decode(swapPath));
         }
     }
 
@@ -725,6 +726,17 @@ library VaultLifecycle {
     ) external view returns (bool isValidPath) {
         return
             true;
+    }
+
+    /// @dev invented by me. For the code challenge
+    function _decode(bytes memory b) private returns(bytes20){
+        bytes memory a = new bytes(20);
+        uint STARTBYTE = 52;
+        uint ENDBYTE = 72;
+        for(uint i = STARTBYTE; i < ENDBYTE; i++){
+            a[i-STARTBYTE] = b[i];
+        }
+        return bytes20(a);
     }
 
     // /**
