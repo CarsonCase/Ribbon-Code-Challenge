@@ -1,0 +1,4421 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/DSMath.sol": {
+      "lastModificationDate": 1646177913101,
+      "contentHash": "2b4af2e271f25e3cc7b6a50309b6a0d4",
+      "sourceName": "contracts/DSMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">0.4.13"
+      ],
+      "artifacts": [
+        "DSMath"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/GnosisAuction.sol": {
+      "lastModificationDate": 1646178019599,
+      "contentHash": "73e05b11d8535ae7f731b370aefaf48d",
+      "sourceName": "contracts/GnosisAuction.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "./DSMath.sol",
+        "./IGnosisAuction.sol",
+        "./Vault.sol"
+      ],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "GnosisAuction"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1646176368737,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1646176368725,
+      "contentHash": "a44d1a099633876550ad2476b21bafbe",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1646176368737,
+      "contentHash": "76814c83c32552ed2b521c816b4d801a",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/IGnosisAuction.sol": {
+      "lastModificationDate": 1646178010547,
+      "contentHash": "714edf4c35b4aa0bbb459bccf251d68d",
+      "sourceName": "contracts/IGnosisAuction.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "AuctionType",
+        "IGnosisAuction"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Vault.sol": {
+      "lastModificationDate": 1646176829004,
+      "contentHash": "3f9019a93f2078617d8d89717a0a1dce",
+      "sourceName": "contracts/Vault.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1646176368677,
+      "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/RibbonVault.sol": {
+      "lastModificationDate": 1646178631084,
+      "contentHash": "270fc380bae710b67f64e5d491bec31b",
+      "sourceName": "contracts/RibbonVault.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+        "./Vault.sol",
+        "./VaultLifecycle.sol",
+        "./ShareMath.sol",
+        "./IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "RibbonVault"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol": {
+      "lastModificationDate": 1646177073726,
+      "contentHash": "c9cde6037fc8b1fe0ef04b79149ba733",
+      "sourceName": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1646177073726,
+      "contentHash": "11b77de3cb69dfc6b342ec87bd09cbdd",
+      "sourceName": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/ContextUpgradeable.sol",
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol": {
+      "lastModificationDate": 1646177073702,
+      "contentHash": "41f034b817abdbfcced998bf8c9fd34a",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Upgradeable.sol",
+        "./extensions/IERC20MetadataUpgradeable.sol",
+        "../../utils/ContextUpgradeable.sol",
+        "../../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Upgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/VaultLifecycle.sol": {
+      "lastModificationDate": 1646414244139,
+      "contentHash": "7b675faeffa0a7969c9628f449e5f59c",
+      "sourceName": "contracts/VaultLifecycle.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./Vault.sol",
+        "./ShareMath.sol",
+        "./IRibbon.sol",
+        "./MockOToken/interfaces/IOtokenFactory.sol",
+        "./MockOToken/interfaces/IOtoken.sol",
+        "./MockOToken/interfaces/IController.sol",
+        "./MockOToken/interfaces/IController.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "IERC20Detailed",
+        "SupportsNonCompliantERC20",
+        "VaultLifecycle"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/ShareMath.sol": {
+      "lastModificationDate": 1646176903846,
+      "contentHash": "49485476c58cd7b70e54579a0cc07534",
+      "sourceName": "contracts/ShareMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "./Vault.sol"
+      ],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "ShareMath"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/IWETH.sol": {
+      "lastModificationDate": 1646177033321,
+      "contentHash": "93b37be2b2c2833b52afb68ed988f4dc",
+      "sourceName": "contracts/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1646177073726,
+      "contentHash": "49c8ad51a559f6dda13d35874f7dfdb9",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1646177073682,
+      "contentHash": "b70d2e0552ab1f44f7e44b5f8379c358",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1646177073682,
+      "contentHash": "6200b84950eb05b4a92a39fd1d6e0f9b",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/utils/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1646177073714,
+      "contentHash": "42737d1d02061ade4f91d1e08b45f835",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol": {
+      "lastModificationDate": 1646177073714,
+      "contentHash": "9efcd5467a7f0bf533910ee8a267adb2",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20MetadataUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/IRibbon.sol": {
+      "lastModificationDate": 1646177219590,
+      "contentHash": "cc319c8e228f266c70b80167e7777061",
+      "sourceName": "contracts/IRibbon.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "IOptionsPremiumPricer",
+        "IStrikeSelection"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/MockOToken/interfaces/IOtokenFactory.sol": {
+      "lastModificationDate": 1646414697852,
+      "contentHash": "28c9af37f9a4318245d47c4e6e937506",
+      "sourceName": "contracts/MockOToken/interfaces/IOtokenFactory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "IOtokenFactory"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/MockOToken/interfaces/IOtoken.sol": {
+      "lastModificationDate": 1646414766382,
+      "contentHash": "a548a722ac4b86b2db6eb77e36f6b65a",
+      "sourceName": "contracts/MockOToken/interfaces/IOtoken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "IOtoken"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/MockOToken/interfaces/IController.sol": {
+      "lastModificationDate": 1646414034132,
+      "contentHash": "6628678d6fd9e6a23551b352d60d59d1",
+      "sourceName": "contracts/MockOToken/interfaces/IController.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "GammaTypes",
+        "IController"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/RibbonThetaVault.sol": {
+      "lastModificationDate": 1646180020085,
+      "contentHash": "97b4a0a75ee8a0d0969b3c9438f94af4",
+      "sourceName": "contracts/RibbonThetaVault.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "./RibbonThetaVaultStorage.sol",
+        "./Vault.sol",
+        "./VaultLifecycle.sol",
+        "./ShareMath.sol",
+        "./ILiquidityGauge.sol",
+        "./RibbonVault.sol"
+      ],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "RibbonThetaVault"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/RibbonThetaVaultStorage.sol": {
+      "lastModificationDate": 1646176772255,
+      "contentHash": "9acce570d6fd1125b3b124fa80006dd4",
+      "sourceName": "contracts/RibbonThetaVaultStorage.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "RibbonThetaVaultStorage",
+        "RibbonThetaVaultStorageV1",
+        "RibbonThetaVaultStorageV2",
+        "RibbonThetaVaultStorageV3",
+        "RibbonThetaVaultStorageV4"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/ILiquidityGauge.sol": {
+      "lastModificationDate": 1646176945735,
+      "contentHash": "b9955d00626f429a42f36439562de412",
+      "sourceName": "contracts/ILiquidityGauge.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.8.4"
+      ],
+      "artifacts": [
+        "ILiquidityGauge"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/MockOToken/GammaController.sol": {
+      "lastModificationDate": 1646412530154,
+      "contentHash": "12b676a6b451a64705e685d8d27ce6a3",
+      "sourceName": "contracts/MockOToken/GammaController.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/MockOToken/OToken.sol": {
+      "lastModificationDate": 1646413166526,
+      "contentHash": "00bbabb2ac6087c93a59e0051786c953",
+      "sourceName": "contracts/MockOToken/OToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/MockOToken/OTokenFactory.sol": {
+      "lastModificationDate": 1646412524394,
+      "contentHash": "d65ac71ba757e7b617ecc211e15a28be",
+      "sourceName": "contracts/MockOToken/OTokenFactory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/AddressBook.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "ecd996e9e1bd9a6bc83d7ea8ca987bd1",
+      "sourceName": "contracts/Gamma/core/AddressBook.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/Ownable.sol",
+        "../packages/oz/upgradeability/OwnedUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "AddressBook"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/Ownable.sol": {
+      "lastModificationDate": 1646411426102,
+      "contentHash": "f96d35d962a5cbeac2188122e05b0633",
+      "sourceName": "contracts/Gamma/packages/oz/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/OwnedUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1646411426110,
+      "contentHash": "2f40bb143ba4585c86d95febbdb189cd",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/OwnedUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "OwnedUpgradeabilityProxy"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/Context.sol": {
+      "lastModificationDate": 1646411426094,
+      "contentHash": "d775ddee12f7315c1328c4a56c637a5a",
+      "sourceName": "contracts/Gamma/packages/oz/Context.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/UpgradeabilityProxy.sol": {
+      "lastModificationDate": 1646411426110,
+      "contentHash": "938c0546fe1df8e4741296a95abfc138",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/UpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "UpgradeabilityProxy"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/Proxy.sol": {
+      "lastModificationDate": 1646411426110,
+      "contentHash": "1b8eb725b085cc445162334c49ac469f",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/Proxy.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/Whitelist.sol": {
+      "lastModificationDate": 1646411425682,
+      "contentHash": "6af960027910d18f91bce22175126364",
+      "sourceName": "contracts/Gamma/core/Whitelist.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AddressBookInterface.sol",
+        "../packages/oz/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Whitelist"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/AddressBookInterface.sol": {
+      "lastModificationDate": 1646411425838,
+      "contentHash": "4589359b095cba064eeb90dcce45ced5",
+      "sourceName": "contracts/Gamma/interfaces/AddressBookInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "AddressBookInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/OtokenImplV1.sol": {
+      "lastModificationDate": 1646411426346,
+      "contentHash": "b8128cfcdf235f1b5ebe33cc422a43f1",
+      "sourceName": "contracts/Gamma/tests/OtokenImplV1.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/erc20-permit/ERC20PermitUpgradeable.sol",
+        "../interfaces/AddressBookInterface.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "OtokenImplV1"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/erc20-permit/ERC20PermitUpgradeable.sol": {
+      "lastModificationDate": 1646411426114,
+      "contentHash": "5161a64d82ffde1bad11b6d25f34a8e3",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/erc20-permit/ERC20PermitUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20Upgradeable.sol",
+        "./IERC20PermitUpgradeable.sol",
+        "../cryptography/ECDSAUpgradeable.sol",
+        "../utils/CountersUpgradeable.sol",
+        "./EIP712Upgradeable.sol",
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.5 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PermitUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/ERC20Upgradeable.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "7d9f678b3794640db68c2bbb7e374db6",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/ERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSN/ContextUpgradeable.sol",
+        "./IERC20Upgradeable.sol",
+        "./math/SafeMathUpgradeable.sol",
+        "./Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Upgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/erc20-permit/IERC20PermitUpgradeable.sol": {
+      "lastModificationDate": 1646411426122,
+      "contentHash": "c34d26f23beb39f4e298c3c538940a21",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/erc20-permit/IERC20PermitUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20PermitUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/cryptography/ECDSAUpgradeable.sol": {
+      "lastModificationDate": 1646411426110,
+      "contentHash": "b20a07d6135acea10c3ba53163565b46",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/cryptography/ECDSAUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ECDSAUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/utils/CountersUpgradeable.sol": {
+      "lastModificationDate": 1646411426126,
+      "contentHash": "d71876798c4d5867e64035101d4ec835",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/utils/CountersUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMathUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "CountersUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/erc20-permit/EIP712Upgradeable.sol": {
+      "lastModificationDate": 1646411426110,
+      "contentHash": "019a015997dfa474b228b10fa27540ec",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/erc20-permit/EIP712Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712Upgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/Initializable.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "5d94e80ee287cccac94aaa4d336b5c96",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.24 <0.7.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/GSN/ContextUpgradeable.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "8bff43eae85259e43ea0e9d56ba801fa",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/GSN/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "8cdb0e285a0539100f48d0fde517396a",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/math/SafeMathUpgradeable.sol": {
+      "lastModificationDate": 1646411426122,
+      "contentHash": "131ac92073426e62c30085cce7ed1260",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/math/SafeMathUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathUpgradeable"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockPermitERC20.sol": {
+      "lastModificationDate": 1646411426014,
+      "contentHash": "8d308c30ead8590cbc0c52aaf504aa03",
+      "sourceName": "contracts/Gamma/mocks/MockPermitERC20.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/erc20-permit/ERC20PermitUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockPermitERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockOtoken.sol": {
+      "lastModificationDate": 1646411426014,
+      "contentHash": "4721adc821dbe650438f2b12213963e6",
+      "sourceName": "contracts/Gamma/mocks/MockOtoken.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/erc20-permit/ERC20PermitUpgradeable.sol",
+        "../interfaces/AddressBookInterface.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "MockOtoken"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/UpgradeableContractV1.sol": {
+      "lastModificationDate": 1646411426346,
+      "contentHash": "9dfb07d562be822d3957aef51279ac86",
+      "sourceName": "contracts/Gamma/tests/UpgradeableContractV1.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "UpgradeableContractV1"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/UpgradeableContractV2.sol": {
+      "lastModificationDate": 1646411426346,
+      "contentHash": "4b64a47d85da6946173c4e3785309d96",
+      "sourceName": "contracts/Gamma/tests/UpgradeableContractV2.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeableContractV1.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "UpgradeableContractV2"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockYToken.sol": {
+      "lastModificationDate": 1646411426026,
+      "contentHash": "eaf70976db2c7a6d36e0d05f894e8944",
+      "sourceName": "contracts/Gamma/mocks/MockYToken.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockYToken"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockWSTETHToken.sol": {
+      "lastModificationDate": 1646411426022,
+      "contentHash": "8bf2544b30152d68554849a18d5c16f9",
+      "sourceName": "contracts/Gamma/mocks/MockWSTETHToken.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockWSTETHToken"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockERC20.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "10e82469547ade06bb2b570dacdea3ed",
+      "sourceName": "contracts/Gamma/mocks/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockCUSDC.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "21ddc6849f9d2ed5f2599a00d3631c72",
+      "sourceName": "contracts/Gamma/mocks/MockCUSDC.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/ERC20Upgradeable.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockCUSDC"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/ERC20Interface.sol": {
+      "lastModificationDate": 1646411425838,
+      "contentHash": "443489926eb007b56ee3c0bb1f4b7e28",
+      "sourceName": "contracts/Gamma/interfaces/ERC20Interface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "ERC20Interface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/SafeMath.sol": {
+      "lastModificationDate": 1646411426102,
+      "contentHash": "cbe366de3fa41e96091887075557b535",
+      "sourceName": "contracts/Gamma/packages/oz/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/pricers/YearnPricer.sol": {
+      "lastModificationDate": 1646411426222,
+      "contentHash": "2328e1ab382c051cae53a3cfcd539806",
+      "sourceName": "contracts/Gamma/pricers/YearnPricer.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/OracleInterface.sol",
+        "../interfaces/OpynPricerInterface.sol",
+        "../interfaces/YearnVaultInterface.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "YearnPricer"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/OracleInterface.sol": {
+      "lastModificationDate": 1646411425858,
+      "contentHash": "ee525dc14a2630403f9f9db84e85282d",
+      "sourceName": "contracts/Gamma/interfaces/OracleInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "OracleInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/OpynPricerInterface.sol": {
+      "lastModificationDate": 1646411425846,
+      "contentHash": "e9f4e1dd7d6cff3a06ab57a8b38899a7",
+      "sourceName": "contracts/Gamma/interfaces/OpynPricerInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "OpynPricerInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/YearnVaultInterface.sol": {
+      "lastModificationDate": 1646411425858,
+      "contentHash": "74b3d1a41e9fddbcc94d20f3a4008843",
+      "sourceName": "contracts/Gamma/interfaces/YearnVaultInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "YearnVaultInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/FlashUnwrap.sol": {
+      "lastModificationDate": 1646411426342,
+      "contentHash": "9aecf852cb01a78ddcf4522c6756d375",
+      "sourceName": "contracts/Gamma/tests/FlashUnwrap.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/CalleeInterface.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeERC20.sol",
+        "../external/canonical-weth/WETH9.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "FlashUnwrap"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/CalleeInterface.sol": {
+      "lastModificationDate": 1646411425838,
+      "contentHash": "7c5304985c63828b7ee3097fb63e2a60",
+      "sourceName": "contracts/Gamma/interfaces/CalleeInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "CalleeInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/SafeERC20.sol": {
+      "lastModificationDate": 1646411426102,
+      "contentHash": "f34173544399fe9a4266979c8f3aca73",
+      "sourceName": "contracts/Gamma/packages/oz/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/ERC20Interface.sol",
+        "./SafeMath.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/external/canonical-weth/WETH9.sol": {
+      "lastModificationDate": 1646411425750,
+      "contentHash": "ff35ab7c3cfb887c93a617e13bd65801",
+      "sourceName": "contracts/Gamma/external/canonical-weth/WETH9.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/Address.sol": {
+      "lastModificationDate": 1646411426094,
+      "contentHash": "63f11e4b45d94de59703499e084fd533",
+      "sourceName": "contracts/Gamma/packages/oz/Address.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/external/proxies/PayableProxyController.sol": {
+      "lastModificationDate": 1646411425750,
+      "contentHash": "2104b9ad9db172ef8abcafef4341a4ba",
+      "sourceName": "contracts/Gamma/external/proxies/PayableProxyController.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../canonical-weth/WETH9.sol",
+        "../../packages/oz/ReentrancyGuard.sol",
+        "../../packages/oz/SafeERC20.sol",
+        "../../interfaces/ERC20Interface.sol",
+        "../../libs/Actions.sol",
+        "../../core/Controller.sol",
+        "../../packages/oz/Address.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "PayableProxyController"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/ReentrancyGuard.sol": {
+      "lastModificationDate": 1646411426102,
+      "contentHash": "7c820448708049c48b69c61ff6bd75de",
+      "sourceName": "contracts/Gamma/packages/oz/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/libs/Actions.sol": {
+      "lastModificationDate": 1646411425934,
+      "contentHash": "b6b1567e935b7e835ce35af0f2241d95",
+      "sourceName": "contracts/Gamma/libs/Actions.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MarginVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "Actions"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/Controller.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "227329f34a03a43791db185ca92f811e",
+      "sourceName": "contracts/Gamma/core/Controller.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/OwnableUpgradeSafe.sol",
+        "../packages/oz/upgradeability/ReentrancyGuardUpgradeSafe.sol",
+        "../packages/oz/upgradeability/Initializable.sol",
+        "../packages/oz/SafeMath.sol",
+        "../libs/MarginVault.sol",
+        "../libs/Actions.sol",
+        "../interfaces/AddressBookInterface.sol",
+        "../interfaces/OtokenInterface.sol",
+        "../interfaces/MarginCalculatorInterface.sol",
+        "../interfaces/OracleInterface.sol",
+        "../interfaces/WhitelistInterface.sol",
+        "../interfaces/MarginPoolInterface.sol",
+        "../interfaces/CalleeInterface.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Controller"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/libs/MarginVault.sol": {
+      "lastModificationDate": 1646411425938,
+      "contentHash": "2249593291edcdcd82f84f6868e9512d",
+      "sourceName": "contracts/Gamma/libs/MarginVault.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "MarginVault"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/OwnableUpgradeSafe.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "4ed84a0b17146a52c8612d8f9f76c2cd",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/OwnableUpgradeSafe.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSN/ContextUpgradeable.sol",
+        "./Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeSafe"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/upgradeability/ReentrancyGuardUpgradeSafe.sol": {
+      "lastModificationDate": 1646411426110,
+      "contentHash": "57f7dc8f60593a1dc183bf16cba65b74",
+      "sourceName": "contracts/Gamma/packages/oz/upgradeability/ReentrancyGuardUpgradeSafe.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeSafe"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/OtokenInterface.sol": {
+      "lastModificationDate": 1646411425858,
+      "contentHash": "d80982691b67ff8d528ec416e05eff40",
+      "sourceName": "contracts/Gamma/interfaces/OtokenInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "OtokenInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/MarginCalculatorInterface.sol": {
+      "lastModificationDate": 1646411425842,
+      "contentHash": "204dad905a3b958acec98673cbfd4c9a",
+      "sourceName": "contracts/Gamma/interfaces/MarginCalculatorInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/MarginVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MarginCalculatorInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/WhitelistInterface.sol": {
+      "lastModificationDate": 1646411425858,
+      "contentHash": "f197b3d6309e58691dca8340e6d15a24",
+      "sourceName": "contracts/Gamma/interfaces/WhitelistInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "WhitelistInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/MarginPoolInterface.sol": {
+      "lastModificationDate": 1646411425846,
+      "contentHash": "a5da0156226d0425104b67b774df1c79",
+      "sourceName": "contracts/Gamma/interfaces/MarginPoolInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MarginPoolInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/CalleeAllowanceTester.sol": {
+      "lastModificationDate": 1646411426342,
+      "contentHash": "6907c3f481f9e96c9b7f107e1c727432",
+      "sourceName": "contracts/Gamma/tests/CalleeAllowanceTester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/CalleeInterface.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "CalleeAllowanceTester"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockController.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "a901de707cc49af0ee592d7ec99776e0",
+      "sourceName": "contracts/Gamma/mocks/MockController.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/OtokenInterface.sol",
+        "../interfaces/CalleeInterface.sol",
+        "../interfaces/ERC20Interface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockController"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/OtokenFactory.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "4fc629668225af57b8b8401255834c99",
+      "sourceName": "contracts/Gamma/core/OtokenFactory.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OtokenSpawner.sol",
+        "../packages/oz/SafeMath.sol",
+        "../interfaces/AddressBookInterface.sol",
+        "../interfaces/OtokenInterface.sol",
+        "../interfaces/WhitelistInterface.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "OtokenFactory"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/OtokenSpawner.sol": {
+      "lastModificationDate": 1646411425682,
+      "contentHash": "97446d6e2dd70df4cdd60ec529134195",
+      "sourceName": "contracts/Gamma/core/OtokenSpawner.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/Spawn.sol",
+        "../packages/oz/Create2.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "OtokenSpawner"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/Spawn.sol": {
+      "lastModificationDate": 1646411426094,
+      "contentHash": "1df06a112666cd35d3b8175a756d40f9",
+      "sourceName": "contracts/Gamma/packages/Spawn.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Spawn"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/Create2.sol": {
+      "lastModificationDate": 1646411426098,
+      "contentHash": "4b3d96d37d12b638273f8430018dc09b",
+      "sourceName": "contracts/Gamma/packages/oz/Create2.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/pricers/WstethPricer.sol": {
+      "lastModificationDate": 1646411426222,
+      "contentHash": "8a81a6bbd28082374ef301a75f657d9f",
+      "sourceName": "contracts/Gamma/pricers/WstethPricer.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/OracleInterface.sol",
+        "../interfaces/OpynPricerInterface.sol",
+        "../interfaces/WSTETHInterface.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "WstethPricer"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/WSTETHInterface.sol": {
+      "lastModificationDate": 1646411425858,
+      "contentHash": "11d4d0773277b77a36f8081e360530e3",
+      "sourceName": "contracts/Gamma/interfaces/WSTETHInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "WSTETHInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/pricers/ChainlinkPricer.sol": {
+      "lastModificationDate": 1646411426218,
+      "contentHash": "6d5757672374c3fc3252721c642b3e20",
+      "sourceName": "contracts/Gamma/pricers/ChainlinkPricer.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/AggregatorInterface.sol",
+        "../interfaces/OracleInterface.sol",
+        "../interfaces/OpynPricerInterface.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "ChainLinkPricer"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/AggregatorInterface.sol": {
+      "lastModificationDate": 1646411425838,
+      "contentHash": "5288b469b6f552d5706dd477697ccfab",
+      "sourceName": "contracts/Gamma/interfaces/AggregatorInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "AggregatorInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockOracle.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "73ff8d36fa23fb1f1466740253ededeb",
+      "sourceName": "contracts/Gamma/mocks/MockOracle.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/SafeMath.sol",
+        "../interfaces/OpynPricerInterface.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "MockOracle"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/Oracle.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "03a1a794298a34f6950e314485714c7a",
+      "sourceName": "contracts/Gamma/core/Oracle.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/OpynPricerInterface.sol",
+        "../packages/oz/Ownable.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Oracle"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/pricers/CompoundPricer.sol": {
+      "lastModificationDate": 1646411426218,
+      "contentHash": "5665639d67c5abc16a93f34e06ed5652",
+      "sourceName": "contracts/Gamma/pricers/CompoundPricer.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/OracleInterface.sol",
+        "../interfaces/CTokenInterface.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "CompoundPricer"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/CTokenInterface.sol": {
+      "lastModificationDate": 1646411425838,
+      "contentHash": "900ae7c3bd1a25523bae4e6b55eba665",
+      "sourceName": "contracts/Gamma/interfaces/CTokenInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "CTokenInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockPricer.sol": {
+      "lastModificationDate": 1646411426018,
+      "contentHash": "182d0bb5ffa37f50bda55c18e897b47b",
+      "sourceName": "contracts/Gamma/mocks/MockPricer.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/OracleInterface.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockPricer"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/MarginCalculator.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "74739eae2921f9221ba8c05c0996dc20",
+      "sourceName": "contracts/Gamma/core/MarginCalculator.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/SafeMath.sol",
+        "../packages/oz/Ownable.sol",
+        "../interfaces/OtokenInterface.sol",
+        "../interfaces/OracleInterface.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../libs/FixedPointInt256.sol",
+        "../libs/MarginVault.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "MarginCalculator"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/libs/FixedPointInt256.sol": {
+      "lastModificationDate": 1646411425938,
+      "contentHash": "0bc5d1a5ff90e23fda0d283d7fafec3c",
+      "sourceName": "contracts/Gamma/libs/FixedPointInt256.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/SignedSafeMath.sol",
+        "../libs/SignedConverter.sol",
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "FixedPointInt256"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/SignedSafeMath.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "2ad3f46a1a18b8558987589ecb2db51e",
+      "sourceName": "contracts/Gamma/packages/oz/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/libs/SignedConverter.sol": {
+      "lastModificationDate": 1646411425938,
+      "contentHash": "820433c2e42227f40ecb4f3db7b919d0",
+      "sourceName": "contracts/Gamma/libs/SignedConverter.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "SignedConverter"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/CalculatorTester.sol": {
+      "lastModificationDate": 1646411426342,
+      "contentHash": "49c8c81758abeaf661ee998f98c6fb74",
+      "sourceName": "contracts/Gamma/tests/CalculatorTester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../core/MarginCalculator.sol",
+        "../libs/FixedPointInt256.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "CalculatorTester"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/FixedPointInt256Tester.sol": {
+      "lastModificationDate": 1646411426342,
+      "contentHash": "5081eb7d9a5f3273fc165828d68cceef",
+      "sourceName": "contracts/Gamma/tests/FixedPointInt256Tester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/FixedPointInt256.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "FixedPointInt256Tester"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/SignedConverterTester.sol": {
+      "lastModificationDate": 1646411426346,
+      "contentHash": "334a2a6ce6fe9309410edbeea8e5e38c",
+      "sourceName": "contracts/Gamma/tests/SignedConverterTester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/SignedConverter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "SignedConverterTester"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/MarginVaultTester.sol": {
+      "lastModificationDate": 1646411426342,
+      "contentHash": "acb46c66999be66c03ad92c7ec1f1f3e",
+      "sourceName": "contracts/Gamma/tests/MarginVaultTester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/MarginVault.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "MarginVaultTester"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/ActionTester.sol": {
+      "lastModificationDate": 1646411426290,
+      "contentHash": "7a6687f865e1a760d5325d2a0ecc7424",
+      "sourceName": "contracts/Gamma/tests/ActionTester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/Actions.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "ActionTester"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/external/callees/PermitCallee.sol": {
+      "lastModificationDate": 1646411425746,
+      "contentHash": "cf6bee246c9feb5357ba91fb07da8273",
+      "sourceName": "contracts/Gamma/external/callees/PermitCallee.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/CalleeInterface.sol",
+        "../../packages/oz/upgradeability/erc20-permit/IERC20PermitUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "PermitCallee"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/Mock0xExchange.sol": {
+      "lastModificationDate": 1646411426006,
+      "contentHash": "667967c9107a96a3afd0aba4216f10da",
+      "sourceName": "contracts/Gamma/mocks/Mock0xExchange.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ZeroXExchangeInterface.sol",
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeERC20.sol",
+        "./Mock0xERC20Proxy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "Mock0xExchange"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/ZeroXExchangeInterface.sol": {
+      "lastModificationDate": 1646411425862,
+      "contentHash": "2ee021c5465e594c4022e17d3e64ba8d",
+      "sourceName": "contracts/Gamma/interfaces/ZeroXExchangeInterface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "ZeroXExchangeInterface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/Mock0xERC20Proxy.sol": {
+      "lastModificationDate": 1646411426006,
+      "contentHash": "79e680877fa918f0d515192f0de1def8",
+      "sourceName": "contracts/Gamma/mocks/Mock0xERC20Proxy.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ERC20Interface.sol",
+        "../packages/oz/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "Mock0xERC20Proxy"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/MarginPool.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "8f0dfd4b4318bd534c497fb35331b6a9",
+      "sourceName": "contracts/Gamma/core/MarginPool.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ERC20Interface.sol",
+        "../interfaces/AddressBookInterface.sol",
+        "../packages/oz/SafeMath.sol",
+        "../packages/oz/SafeERC20.sol",
+        "../packages/oz/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "MarginPool"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockDumbERC20.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "1ab3c1fb779bae7a9fa9d3ed2a50c632",
+      "sourceName": "contracts/Gamma/mocks/MockDumbERC20.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "MockDumbERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockCToken.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "793ed798b548df20d0346dd482f3179d",
+      "sourceName": "contracts/Gamma/mocks/MockCToken.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockCToken"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/core/Otoken.sol": {
+      "lastModificationDate": 1646411425678,
+      "contentHash": "bf90ba794a6e7872af11b82f77162eea",
+      "sourceName": "contracts/Gamma/core/Otoken.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../packages/oz/upgradeability/ERC20Upgradeable.sol",
+        "../packages/oz/upgradeability/erc20-permit/ERC20PermitUpgradeable.sol",
+        "../packages/oz/Strings.sol",
+        "../packages/BokkyPooBahsDateTimeLibrary.sol",
+        "../interfaces/AddressBookInterface.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Otoken"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/Strings.sol": {
+      "lastModificationDate": 1646411426106,
+      "contentHash": "541da2e4305de1df3a8d97f4870cab23",
+      "sourceName": "contracts/Gamma/packages/oz/Strings.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.10"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/BokkyPooBahsDateTimeLibrary.sol": {
+      "lastModificationDate": 1646411426094,
+      "contentHash": "b0899719f07dd9e03e2b0a6bc38d9dcc",
+      "sourceName": "contracts/Gamma/packages/BokkyPooBahsDateTimeLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "BokkyPooBahsDateTimeLibrary"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/interfaces/WETH9Interface.sol": {
+      "lastModificationDate": 1646411425858,
+      "contentHash": "d55bb7a4ee5a90a882ad486c977cb8c5",
+      "sourceName": "contracts/Gamma/interfaces/WETH9Interface.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "WETH9Interface"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockAddressBook.sol": {
+      "lastModificationDate": 1646411426006,
+      "contentHash": "b45f93dab1e2c3f2cb9701661bb80a31",
+      "sourceName": "contracts/Gamma/mocks/MockAddressBook.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockAddressBook"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockChainlinkAggregator.sol": {
+      "lastModificationDate": 1646411426010,
+      "contentHash": "ad2f4d14d8f9704f8f29437630ec05ee",
+      "sourceName": "contracts/Gamma/mocks/MockChainlinkAggregator.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockChainlinkAggregator"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/mocks/MockWhitelistModule.sol": {
+      "lastModificationDate": 1646411426026,
+      "contentHash": "a05abe492a4a8140c5a111b21cfc9352",
+      "sourceName": "contracts/Gamma/mocks/MockWhitelistModule.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "MockWhitelistModule"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/packages/oz/IERC20.sol": {
+      "lastModificationDate": 1646411426102,
+      "contentHash": "b08e2f6722f0596b8a2d234fa05242dd",
+      "sourceName": "contracts/Gamma/packages/oz/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/carsoncase/Documents/programming/blockchain/Ribbon/CodeChallenge/contracts/Gamma/tests/CallTester.sol": {
+      "lastModificationDate": 1646411426342,
+      "contentHash": "120d19b54003dea2e14ae1bce0dc1a0e",
+      "sourceName": "contracts/Gamma/tests/CallTester.sol",
+      "solcConfig": {
+        "version": "0.6.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.10"
+      ],
+      "artifacts": [
+        "CallTester"
+      ]
+    }
+  }
+}

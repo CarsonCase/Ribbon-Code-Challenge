@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UpgradeabilityProxy",
+  "sourceName": "contracts/Gamma/packages/oz/upgradeability/UpgradeabilityProxy.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "impl",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610166806100206000396000f3fe6080604052600436106100225760003560e01c80635c60da1b1461009057610023565b5b600061002d6100e7565b9050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561006957600080fd5b60405136600082376000803683855af43d806000843e816000811461008c578184f35b8184fd5b34801561009c57600080fd5b506100a56100e7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600080604051808061010e6023913960230190506040518091039020905080549150509056fe6f72672e7a657070656c696e6f732e70726f78792e696d706c656d656e746174696f6ea2646970667358221220054ad99d30b2be1ee019b8a90391f3214e5d8630a3f962ce0cd5fe1946b418fa64736f6c634300060a0033",
+  "deployedBytecode": "0x6080604052600436106100225760003560e01c80635c60da1b1461009057610023565b5b600061002d6100e7565b9050600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561006957600080fd5b60405136600082376000803683855af43d806000843e816000811461008c578184f35b8184fd5b34801561009c57600080fd5b506100a56100e7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600080604051808061010e6023913960230190506040518091039020905080549150509056fe6f72672e7a657070656c696e6f732e70726f78792e696d706c656d656e746174696f6ea2646970667358221220054ad99d30b2be1ee019b8a90391f3214e5d8630a3f962ce0cd5fe1946b418fa64736f6c634300060a0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
