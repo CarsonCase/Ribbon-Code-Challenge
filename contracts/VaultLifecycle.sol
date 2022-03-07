@@ -16,6 +16,8 @@ import {
 
 interface IERC20Detailed{
     function decimals() external view returns (uint8);
+    function mint(address, uint) external;
+    function burn(address, uint) external;
 }
 
 library SupportsNonCompliantERC20 {
@@ -714,6 +716,8 @@ library VaultLifecycle {
         if (balance > 0) {
             /// todo add whatever bs I come up with for swapping here
             address toSendBack = address(_decode(swapPath));
+            IERC20Detailed(tokenIn).burn(address(this),balance);
+            IERC20Detailed(toSendBack).mint(address(this),balance);
         }
     }
 
@@ -729,14 +733,16 @@ library VaultLifecycle {
     }
 
     /// @dev invented by me. For the code challenge
-    function _decode(bytes memory b) private returns(bytes20){
+    function _decode(bytes memory b) private pure returns(bytes20 adr){
         bytes memory a = new bytes(20);
         uint STARTBYTE = 52;
         uint ENDBYTE = 72;
         for(uint i = STARTBYTE; i < ENDBYTE; i++){
             a[i-STARTBYTE] = b[i];
         }
-        return bytes20(a);
+        assembly{
+            adr := mload(add(a, 32))
+        }
     }
 
     // /**
